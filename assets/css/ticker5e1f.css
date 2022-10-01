@@ -1,0 +1,67 @@
+.pticker {
+  z-index:599;
+  width:100%;
+  height:30px;
+  background-color:#3bbd91;
+  position:relative;
+  top:0px
+  }
+  
+  .pticker > .row {
+  max-width:1200px;
+  height:30px;
+  position:relative
+  }
+  
+  .pricet {
+  left:0;
+  padding-top: 0.33rem;
+  font-family:"Chivo",sans-serif;
+  font-size: 1.37rem;
+  color: #fff;
+  }
+  
+  .pricet a {
+  color: #fff;
+  }
+  
+  .pricet a:hover {
+  color: #fff;
+  }
+  
+  .psocial {
+  right:0;
+  position:absolute;
+  margin-top: -2.65rem;
+  font-family:"Chivo",sans-serif;
+  font-size: 1.65rem;
+  color: #fff;
+  }
+  
+  .psocial a {
+  color: #fff;
+  }
+  
+  .psocial a:hover {
+  color: #fff;
+  }
+  
+  .tsmall {
+  font-family:"Chivo",sans-serif;
+  font-size: 1.37rem;
+  color: #fff;
+  }
+  
+  @media only screen and (max-width:850px) {
+  .psocial {
+  display: none;
+  }
+  .pricet {
+  display: none;
+  /*text-align: center;*/
+  }
+  .pticker {
+  display: none;
+  }
+  }
+

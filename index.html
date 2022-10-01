@@ -1,530 +1,697 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>APIX CASH Project | Open source P2P digital currency</title>
-	<meta name="description" content="APIXCASH: Open source P2P Digital currency for algoritm X16Rv2" />
-	<meta name="keywords" content="X16Rv2,coins,coin,APIX,APX,crypto" />
-	<meta name="author" content="APIXCASH Project"/>
+		<script>
+			var target = location.hash
+			
+			if (['#ecosystem', '#exchanges', '#apixcash', '#developers', '#socialmedia', '#docs', '#contribute', '#history'].indexOf(target) >= 0)
+			
+			   window.addEventListener("load", function(){
+			setTimeout(function(){
+			       window.scrollTo(0, $(target).offset().top -100);
+			}, 1000);
+			   });
+			
+			else if (target.length > 0)
+			
+			   window.addEventListener("load", function(){
+			setTimeout(function(){
+			       window.scrollTo(0, $(target).offset().top);
+			}, 1000);
+			   });
+			
+			else
+			null
+		</script>
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLTRB04XZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	<!-- Bootstrap & Plugins CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+  gtag('config', 'G-JLTRB04XZ7');
+</script>
 
-	<!-- Custom CSS -->
-	<link href="assets/css/dark44ca.css?v=1.4.0" rel="stylesheet" type="text/css">
+		<title>APIX CASH Project | Open source P2P digital currency</title>
+		<meta charset="utf-8">
+		<meta name="description" content="APIXCASH is an open-source decentralized global cryptocurrency.">
+		<meta name="keywords" content="apx, apix, X16Rv2, Blockchain, Decentralized, Coin, Asset, Digital, Crypto, Currency, Payments, Wallet, Community, Exchange, Buy, Price, Official, Lightning">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/base.css">
+		<link rel="stylesheet" href="assets/css/vendor.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/ticker5e1f.css?v=2">
+		<script src="assets/js/modernizr.js"></script>
+		<script src="assets/js/pace.min.js"></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+		<meta name="apple-mobile-web-app-title" content="APIXCASH">
+		<meta name="application-name" content="APIXCASH">
+		<meta name="msapplication-TileColor" content="#002352">
+		<meta name="theme-color" content="#002352">
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="APIXCASH - P2P Digital currency" />
+		<meta name="twitter:description" content="APIXCASH is an open-source decentralized global cryptocurrency ." />
+		<meta name="twitter:image" content="https://beyondcoin.io/assets/favicons/twitter.png" />
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5DL3PBL');</script>
-<!-- End Google Tag Manager -->
-<body>
-
-	<div class="loading-wrapper">
-		<div class="loading">
-			<div></div>
-			<div></div>
-			<div></div>
+		<meta property="og:image" content="https://beyondcoin.io/assets/favicons/og-banner.png"/>
+		<meta property="og:image:width" content="955"/>
+		<meta property="og:image:height" content="500"/>
+		<meta property="og:description" content="APIXCASH is an open-source decentralized global cryptocurrency."/>
+		<meta property="og:title" content="APIXCASH - P2P Digital currency"/>
+		<meta property="og:url" content="https://beyondcoin.io"/>
+		<meta property="og:image:url" content="https://beyondcoin.io/assets/favicons/og-banner.png"/>
+	</head>
+	<body id="top">
+		<div id="preloader">
+			<div id="loader">
+				<div>
+					<img src="assets/images/preloader.png" loading="eager" alt="Preloader logo">
+				</div>
+			</div>
 		</div>
-	</div>	
-
-	<!-- ***** Header Area Start ***** -->
-	<header class="header-area">
-		<div class="container">
+		<header class="s-header">
 			<div class="row">
-				<div class="col-12 position-relative">
-					<nav class="main-nav">
-						<!-- ***** Logo Start ***** -->
-						<a href="/" class="logo">
-							<img src="assets/images/logos/logo_white.png" class="light-logo" alt="APIXCASH Project"/>
-							<img src="assets/images/logos/logo_black.png" class="dark-logo" alt="APIXCASH Project"/>
-						</a>
-						<!-- ***** Logo End ***** -->
-
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav">
-							<li><a href="#welcome-1">Home</a></li>
-							<li><a href="#infos">Coins Information</a></li>
-							<li><a href="#roadmap">Roadmap</a></li>
-							<li><a href="#faq">Faq</a></li>
-							<li><a href="#contact">Contact</a></li>
-							<li><a href="https://explorer.apix.cash/" class="btn-nav-box">Explorers</a></li>
-						</ul>
-						<a class='menu-trigger'>
-							<span>Menu</span>
-						</a>
-						<!-- ***** Menu End ***** -->						
-					</nav>
+				<div class="header-logo">
+					<a class="site-logo smoothscroll" href="#top" onClick="homeButton()"><img src="assets/images/logo.png" loading="eager" alt="Home">
+					</a>
+				</div>
+				<nav class="header-nav-wrap">
+					<ul class="header-main-nav">
+						<li id="dbc"><a class="ssbc" href="#blockchain" title="Blockchain">Blockchain</a></li>
+						<li><a class="smoothscroll" href="#currency" title="Currency">Currency</a></li>
+						<li><a class="smoothscroll" href="#community" title="Community">Community</a></li>
+						<li><a class="smoothscroll" href="#downloads" title="Downloads">Downloads</a></li>
+					</ul>
+				</nav>
+				<a class="header-menu-toggle" href="#"><span>Menu</span></a>
+			</div>
+		</header>
+		<header class="pticker">
+			<div class="row">
+				<div class="pricet">
+					<a href="#" target="_blank">1 APX &#8776; <div id="price_btc"></div> BTC</a>
+				</div>
+				<div class="psocial">
+					<a href="https://github.com/apixcash" target="_blank" title="GitHub Repo"><i class="fab fa-github"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href="https://github.com/apixcash/apixcash-core/releases" target="_blank" class="tsmall" title="Latest Core Release">v1.1.0</a>&nbsp;&nbsp;&nbsp;                                                                                                                                                                                                                                                                                                                             
+					<a href="https://twitter.com/apixcash" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href="https://www.reddit.com/r/apixcash/" target="_blank"><i class="fab fa-reddit-alien"></i></a>&nbsp;&nbsp;&nbsp;
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- ***** Header Area End ***** -->
-
-	<!-- ***** Wellcome Area Start ***** -->
-	<section class="welcome-area bg-top-right" id="welcome-1">
-		<div class="header-token">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
-						<h1>Better blockhain</h1>
-						<p>experience with APIX CASH</p>
-						<a href="//github.com/apixcash/apixcash-core/tree/main/whitepaper" class="btn-secondary-box">Download Whitepaper</a>
-					</div>
-					<div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
-						<div class="header-image">
-							<img src="assets/images/header.svg" class="img-fluid d-block mx-auto" alt="">
+		</header>
+		<section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="assets/images/hero-bg4.jpg" data-natural-width="3200" data-natural-height="1590" data-position-y="center" data-speed="0.0" data-z-index="1">
+			<div class="shadow-overlay"></div>
+			<div class="home-content">
+				<div class="row home-content__main">
+					<div class="home-content__left">
+						<h1>
+							Peer-to-Peer Cryptocurrency Decentralized Economy
+						</h1>
+						<h3>
+							APIXCASH is more than just a cryptocurrency, it's a whole suite of different products and services all backed by a helpful and welcoming community.
+						</h3>
+						<div class="home-content__btn-wrap">
+							<a href="#about" class="btn btn--primary home-content__btn smoothscroll">
+							Learn More
+							</a>
+							<a href="#exchanges" class="btn btn--primary home-content__btn smoothscrollup">
+							Buy APX
+							</a>
 						</div>
+						<a href="https://litepaper.apix.cash" target="_blank" class="infopaper"><i class="fab fa-readme"></i> Read the litepaper</a>
 					</div>
 				</div>
+				<ul class="home-content__social">
+					<li><a href="https://discord.gg/THyHYxnJYx" target="_blank">Discord</a></li>
+				</ul>
 			</div>
-		</div>
-		<div class="scroll-to">
-			<a href="#what-is-ico">
-				<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			<a href="#footer" class="home-scroll smoothscroll">
+			<span class="home-scroll__icon"></span>
+			</a> 
+		</section>
+		<section id="about" class="s-about target-section">
+			<a href="#footer" class="home-scroll2 smoothscroll">
+			<span class="home-scroll__icon"></span>
 			</a>
-		</div>		
-	</section>
-	<!-- ***** Wellcome Area End ***** -->
-
-	<!-- ***** What is ICO Start ***** -->
-	<section class="section bg-bottom" id="what-is-ico">
-		<div class="container">
-			<!-- ***** Features Items Start ***** -->
-			<div class="row m-bottom-70">
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
-						<div class="icon">
-							<i class="fa fa-cube"></i>
-						</div>
-						<h5 class="features-title">Easy Coin Integration</h5>
-					</div>
+			<div class="row section-header has-bottom-sep" data-aos="fade-up">
+				<div class="col-full">
+					<h1 class="display-1">
+						What APIXCASH?
+					</h1>
+					<p class="lead">
+						APIXCASH (APX) project launched on 22th, Sept 2022, when the genesis block got mined, We are an open-source project designed to enable instant payments to ayone around the world.
+					</p>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-						<div class="icon">
-							<i class="fa fa-lock"></i>
-						</div>
-						<h5 class="features-title">Advanced Security</h5>
+			</div>
+			<div class="row wide about-desc" data-aos="fade">
+				<div class="col-full slick-slider about-desc__slider">
+					<div class="about-desc__slide">
+						<h3 class="item-title">Truly decentralized.</h3>
+						<p>
+							Apixcash has never been funded through an <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> or any premine as Apixcash never had a premine. There is no CEO or a company controlling the Apixcash blockchain. It is a volunteer based and global community driven project.
+						</p>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.6s">
-						<div class="icon">
-							<i class="fa fa-globe"></i>
-						</div>
-						<h5 class="features-title">Decentralized</h5>
+					<div class="about-desc__slide">
+						<h3 class="item-title">More secure.</h3>
+						<p>
+							Apixcash uses the cryptographic algorithm called scrypt to allow bigger miners called ASICs to further secure the network from attacks.
+						</p>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.8s">
-						<div class="icon">
-							<i class="fa fa-server"></i>
-						</div>
-						<h5 class="features-title">Blockchain</h5>
+					<div class="about-desc__slide">
+						<h3 class="item-title">Much faster.</h3>
+						<p>
+							Apixcash blocks are mined every 1 minutes which is 4 times faster than Bitcoin. <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> implementation and blockchain rigidity enable up to 1440 on-chain transactions per second with negligible fees.
+						</p>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
-						<div class="icon">
-							<i class="fa fa-building-o"></i>
-						</div>
-						<h5 class="features-title">Payment Gateway</h5>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-						<div class="icon">
-							<i class="fa fa-connectdevelop"></i>
-						</div>
-						<h5 class="features-title">Developer Friendly</h5>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.6s">
-						<div class="icon">
-							<i class="fa fa-qrcode"></i>
-						</div>
-						<h5 class="features-title">Market Exchange</h5>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-					<div class="features-shadow" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.8s">
-						<div class="icon">
-							<i class="fa fa-shield"></i>
-						</div>
-						<h5 class="features-title">Fast, Safe, Privacy</h5>
+					<div class="about-desc__slide">
+						<h3 class="item-title">Developer Friendly.</h3>
+						<p>
+							Our developer is Friendly to community, this is an important point for us for the progress of the Apixcash
+						</p>
 					</div>
 				</div>
 			</div>
-			<!-- ***** Features Items End ***** -->
-
-			<!-- ***** About Start ***** -->
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
-					<div class="left-heading">
-						<h2 class="section-title">APIX CASH Project</h2>
-					</div>
-					<div class="left-text">
-						<p class="dark">APIX CASH (APIX) project launched on 22th, Sept 2022, when the genesis block got mined, We are an open-source project designed to enable instant payments to ayone around the world.</p>
-						<p>The aim of the project is to create a blockhain optimized specifically for the transfer of assets such as coins from one holder to another</p>
-						<p>The project has No pre-mine, No ICO, or Masternode</p>
-					</div>
-					<a href="https://github.com/apixcash/apixcash-core/releases" class="btn-secondary-line mobile-bottom-fix">Download Wallet</a>					
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
-					<img src="assets/images/theme-1-about.svg" class="img-fluid float-right" alt="Arda ICO">
-				</div>
-			</div>
-			<!-- ***** About End ***** -->
-		</div>
-	</section>
-	<!-- ***** What is ICO End ***** -->
-
-	<!-- ***** Token Sale Start ***** -->
-	<section class="section gradient" id="infos">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="center-heading colored">
-						<h2 class="section-title">Coin Information</h2>
+		</section>
+		<section class="s-about-how target-section" id="blockchain">
+			<div class="row process-wrap">
+				<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+					<div class="col-full">
+						<h1 class="display-1">
+							This is how the Apixcash blockchain works.
+						</h1>
+						<p class="lead">
+							The three layers are the most innovative parts of the Apixcash blockchain providing the network infrastructure, security and communications to function with cutting edge speed.
+						</p>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="box">
-						<div class="row">
-							<!-- ***** APX Progress and Info Start ***** -->
-							<div class="col-lg-6 col-md-6 cols-m-12">
-
-								<!-- ***** APX Info Table Start ***** -->
-								<div class="token-info">
-									<div class="item">
-										<strong>Total Supply</strong>
-										<span>50,000,000 APX</span>
-									</div>
-									<div class="item">
-										<strong>Halving schedule</strong>
-										<span>every 1,000,000 blocks</span>
-									</div>
-									<div class="item">
-										<strong>Block Rewards</strong>
-										<span>5 APX</span>
-									</div>
-									<div class="item">
-										<strong>Block Time</strong>
-										<span>1 minutes</span>
-									</div>
-									<div class="item">
-										<strong>Block per day</strong>
-										<span>1440</span>
-									</div>
-									<div class="item">
-										<strong>Block Size</strong>
-										<span>1MB</span>
-									</div>
-									<div class="item">
-										<strong>Pre-mine</strong>
-										<span>No</span>
-									</div>		
-									<div class="item">
-										<strong>Founders Rewards</strong>
-										<span>0</span>
-									</div>	
-									<div class="item">
-										<strong>Masternodes</strong>
-										<span>0</span>
-									</div>	
-									<div class="item">
-										<strong>Airdrops</strong>
-										<span>No</span>
-									</div>			
-									<div class="item">
-										<strong>RPC Port</strong>
-										<span>5061</span>
-									</div>		
-									<div class="item">
-										<strong>Network Port</strong>
-										<span>6061</span>
-									</div>			
-									<div class="item">
-										<strong>Current Supply</strong>
-										<span><a href="//explorer.apix.cash/ext/getmoneysupply" title="GetMoneySupply">GetMoneySupply</a></span>
-									</div>											
-								</div>
-								<!-- ***** APX Info Table End ***** -->
-							</div>
-							<!-- ***** APX Progress and Info End ***** -->
-
-							<!-- ***** APX Download Start ***** -->
-							<div class="col-lg-6 col-md-6 cols-m-12">
-								<div class="token">
-									<h6 class="title">Downloads Wallet</h6>
-									<div class="token-payment">
-										<a href="https://github.com/apixcash/apixcash-core/releases/download/1.1.0/apixcash-1.1.0-win64-setup.exe" class="btn-primary-line"><i class="fa fa-windows"></i> Windows Installer</a>
-									</div><br/>
-									<div class="token-payment">
-										<a href="https://github.com/apixcash/apixcash-core/releases/download/1.1.0/apixcash-1.1.0-linux.zip" class="btn-primary-line"><i class="fa fa-windows"></i> Linux</a>
-									</div><br/>
-									<div class="token-payment">
-										<a href="https://github.com/apixcash/apixcash-core" class="btn-primary-line"><i class="fa fa-windows"></i> Source Code</a>			
-									</div>
-								</div>
-							</div>
-							<!-- ***** APX Download End ***** -->
+				<div class="process" data-aos="fade">
+					<div class="process__steps block-1-2 block-tab-full group">
+						<div class="col-block step">
+							<h3 class="item-title">Applications / Software.</h3>
+							<p>The top layer is like full of different things like apps and software that all use Apixcash. contracts can be created on the Apixcash Core Client</a> and many other applications can use the Apixcash Core to accept payments in milliseconds.
+							</p>
+						</div>
+						<div class="col-block step">
+							<h3 class="item-title">Digital asset / Public ledger.</h3>
+							<p>The middle layer provides security and administration. A digital byte of data, a representation of larger data or a unit that holds value, and cannot be counterfeited, duplicated or hacked. An immutable public ledger where all transactions on the Apixcash network are recorded. Apixcash uses the scrypt algorithm for security. Newly minted Beyondcoins only come from mining.
+							</p>
+						</div>
+						<div class="col-block step">
+							<h3 class="item-title">Core protocol / Global network.</h3>
+							<p>The bottom layer provides communication and operating procedures. A very low-level way nodes on the Apixcash global network communicate. Hundreds of people are running many versions of the Apixcash software all across the planet. Any server, computer, tablet or mobile phone connected to the Apixcash network becomes a node that helps relay transactions.
+							</p>
+						</div>
+						<div class="col-block step">
+							<h3 class="item-title">Open source / Permissionless.</h3>
+							<p>The Apixcash blockchain is completely open source and free to use released under the <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a>, which gives you the power to run and modify the software. Transparency allows for independent verification of binaries and their corresponding source code.<br />
+								<a href="https://github.com/apixcash/apixcash-core" target="_blank">The APIXCASH Project on GitHub</a>.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- ***** APX Info End ***** -->
-
-	<!-- ***** Roadmap Start ***** -->
-	<section class="section" id="roadmap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="center-heading">
-						<h2 class="section-title">Roadmap</h2>
+			<div class="row s-stats" data-aos="fade">
+				<div class="stitle">Apixcash blockchain stats</div>
+				<div class="block-1-3">
+					<div class="col-block stats__col">
+						<div class="stats__count"></div>
+						<div id="blockcount" class="stats_text"><a href="#" target="_blank">blocks produced</a></div>
+					</div>
+					<div class="col-block stats__col">
+						<div class="stats_text"><a href="#"></a></div>
+					</div>					
+					<div class="col-block stats__col">
+						<div class="stats__count"></div>
+						<div id="peers" class="stats_text"><a href="#" target="_blank">nodes downloaded</a></div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="roadmap-lux-wrapper owl-carousel owl-theme">
-						<div class="roadmap-lux">
-							<div class="header complate">
-								<i class="fa fa-check" style="color:green"></i>
-								<h6 class="date">09-x<br/>2022</h6>
-							</div>
-							<div class="text">
-								<p>Prepare Source Code APIXCASH available on github</p>
-							</div>
-						</div>
-						<div class="roadmap-lux">
-							<div class="header complate">
-								<i class="fa fa-check" style="color:green"></i>
-								<h6 class="date">09-23<br/>2022</h6>
-							</div>
-							<div class="text">
-								<p>Built APIXCASH node, windows, linux, website, social community</p>
-							</div>
-						</div>
-						<div class="roadmap-lux">
-							<div class="header">
-								<i class="fa fa-close" style="color:red"></i>
-								<h6 class="date">09-30<br/>2022</h6>
-							</div>
-							<div class="text">
-								<p>Prepare launch Official Exchange Market APIX</p>
-							</div>
-						</div>
-						<div class="roadmap-lux">
-							<div class="header">
-								<i class="fa fa-close" style="color:red"></i>
-								<h6 class="date">10<br/>2022</h6>
-							</div>
-							<div class="text">
-								<p>Listing $APX on aother exchange market</p>
-							</div>
-						</div>
-						<div class="roadmap-lux">
-							<div class="header">
-								<i class="fa fa-close" style="color:red"></i>
-								<h6 class="date">10<br/>2022</h6>
-							</div>
-							<div class="text">
-								<p>Develop Payment Gateway for integration Secure Payment</p>
-							</div>
-						</div>
-						<div class="roadmap-lux">
-							<div class="header">
-								<i class="fa fa-close" style="color:red"></i>
-								<h6 class="date">11-12<br/>2022</h6>
-							</div>
-							<div class="text">
-								<p>Develop Social Media App integration $APX Coins</p>
-							</div>
-						</div>					
-						<div class="roadmap-lux">
-							<div class="header">
-								<i class="fa fa-close" style="color:red"></i>
-								<h6 class="date">xx<br/>2023</h6>
-							</div>
-							<div class="text">
-								<p>Develop all projects on apixcash blockchain network.</p>
-							</div>
-						</div>							
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Roadmap End ***** -->
-	
-	<!-- ***** Discord APIX Start ***** -->
-	<section class="parallax">
-		<div class="parallax-content">
-			<div class="container">
+			<div class="testimonials-wrap" data-aos="fade" id="history">
 				<div class="row">
-					<div class="col-lg-12">
-						<h1 class="section-title">Join Us On Discord</h1>		
-					</div>
-					<div class="offset-lg-3 col-lg-6">
-						<a href="https://discord.gg/zaMFagHjgq" class="btn-white-line">Join Us On Discord</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Discord APIX End ***** -->
-
-	<!-- ***** FAQ Start ***** -->
-	<section class="section bg-top" id="faq">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="center-heading">
-						<h1 class="section-title">FAQ</h1>
+					<div class="col-full testimonials-header">
+						<h2 class="display-2">The history of Apixcash Project.</h2>
+						<p class="lead">
+							Discover some of the major development milestones of the Apixcash blockchain.
+						</p>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="accordion" id="accordionExample">
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="heading-1">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-									<span class="badge">1</span> What is APIXCASH?
-								</button>
-							</h2>
-							<div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<p>The APIXCASH Project started 22nd Sep 2022 02:28:30 when the 1st genesis block got mined.</p>
-									<p>It is a fork of the Ravencoin code & FoxdCoin We will follow their development and add experimental alternative features. This project is opensource and everyone is welcome to contribute.</p>
-								</div>
+				<div class="row testimonials">
+					<div class="col-full slick-slider testimonials__slider">
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/development.png" loading="lazy" width="72" height="72" alt="Development" class="testimonials__avatar">
+							<p>Apixcash Project started developing APIXCASH.</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">September, 2022</span>
+								<a href="#" target="_blank" class="testimonials__link">Learn more</a>
 							</div>
 						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="heading-2">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-									<span class="badge">2</span> How do you secure your wallet?
-								</button>
-							</h2>
-							<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<p>Good safety measures include encrypting your desktop wallet with a password and for extra security keep a backup of at least the wallet.dat in a secure location (preferably an external drive) If you wish to keep your foxd coins offline, download a paper wallet from https://paper.apix.cash and send your coins from your desktop wallet to the paper wallet and keep this paper wallet safe</p>
-
-								</div>
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/launch.png" loading="lazy" width="72" height="72" alt="Launch" class="testimonials__avatar">
+							<p>The genesis block was mined by Apixcash Project and Apixcash was officially launched. </p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">September 22, 2022</span>
+								<a href="https://github.com/apixcash/apixcash-core/blob/main/src/chainparams.cpp#L106" target="_blank" class="testimonials__link">Learn more</a>
 							</div>
 						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="heading-3">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-									<span class="badge">3</span> Exchange Listing and team funds
-								</button>
-							</h2>
-							<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<p>APIXCASH is a community project without means to pay for exchange listings. We are trying our best to list our project and invite Exchanges to list us for free. Community supporters can send their donations to our exchange listing adresses fund:</p>
-									<p>BTC: bc1qge932xyavhatl4hr9r32086e0z4gz60f4tg93p</p>
-<p>BCH: qrq644jyr30ge2g55ngt3vcay4nthsspm56mshxkn5</p>
-<p>DOGE: D6M72KBw6pBtARqPdMP5ji87dxiXLMCpxt</p>
-<p>LTC: ltc1qa0qkan6uyjrcu3nmzgxqzr89wvkqlqjnh2esfp</p>
-<p>APX: AJd9Gup8ZwjKye26VQH17RDhKa8WUugYTJ</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="heading-4">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-3">
-									<span class="badge">4</span> How to mining?
-								</button>
-							</h2>
-							<div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<p>You can mining $APX with algo X16Rv2</p>
-									<p><a href="https://asia.apix.cash" class="btn-warning-line">asia.apix.cash</a></p>
-									<p>Another pools server</p>
-									<p><a href="https://miningpoolstats.stream/apixcash" class="btn-warning-line">MiningPoolStats</a></p>
-								</div>
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/multialgo.png" loading="lazy" width="72" height="72" alt="MultiShield" class="testimonials__avatar">
+							<p>Build Apixcash Windows Version, Linux Version, Node Version</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">September 22, 2022</span>
+								<a href="https://github.com/apixcash/apixcash-core/releases" target="_blank" class="testimonials__link">Learn more</a>
 							</div>
 						</div>						
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** FAQ End ***** -->
-
-	<!-- ***** Contact & Footer Start ***** -->
-	<footer id="contact">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-12 col-sm-12">
-						<div class="contact">
-							<h3 class="section-title">Get In Touch</h3>
-							<p>give us suggestions and criticism to further develop in the future</p>
-							<ul class="list">
-								<li><i class="fa fa-envelope-o"></i><a href="mailto:apixcash@gmail.com">support@apix.cash</a></li>
-								<li><i class="fa fa-paper-plane-o"></i><a href="https://discord.gg/zaMFagHjgq">Join us on Discord</a></li>
-							</ul>
-							<ul class="social">
-								<li><a href="https://twitter.com/apixcash"><i class="fa fa-twitter-square"></i></a></li>
-								<li><a href="https://www.reddit.com/r/apixcash/"><i class="fa fa-reddit-square"></i></a></li>
-								<li><a href="https://github.com/apixcash/apixcash-core"><i class="fa fa-github-square"></i></a></li>
-							</ul>							
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/digishield.png" loading="lazy" width="72" height="72" alt="DigiShield" class="testimonials__avatar">
+							<p>Official discord launched.</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">September 23, 2022</span>
+								<a href="https://discord.gg/THyHYxnJYx" target="_blank" class="testimonials__link">Goto Discord</a>
+							</div>
+						</div>						
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/segwit.png" loading="lazy" width="72" height="72" alt="MultiAlgo" class="testimonials__avatar">
+							<p>Official Apixcash Market launched.</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">October 01, 2022</span>
+								<a href="https://exchange.apix.cash/" target="_blank" class="testimonials__link">Goto Market</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<p class="copyright">Copyright &copy; 2022 APIXCASH Project rights reserved</p>
+		</section>
+		<section id="currency" class="s-features target-section">
+			<div class="row section-header has-bottom-sep" data-aos="fade-up">
+				<div class="col-full">
+					<h1 class="display-1">
+						A digital currency<br/>you would absolutely love.
+					</h1>
+					<p class="lead">
+						Apixcash (APX) is a highly scalable peer-to-peer digital currency, blockchain economy that enables a whole new world of transacting with low fees.
+					</p>
+				</div>
+			</div>
+			<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+				<div class="col-block item-feature">
+					<div class="item-feature__icon">
+						<i class="fas fa-phone-laptop"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Easy to use.</h3>
+						<p>Getting started to use Apixcash is easy. All you need to do is install a <a class="smoothscroll" href="#downloads">Apixcash supported wallet</a> then install it to send and recieve Apixcash.
+						</p>
+					</div>
+				</div>
+				<div class="col-block item-feature">
+					<div class="item-feature__icon">
+						<i class="fas fa-thumbs-up"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Not an ICO.</h3>
+						<p>Apixcash has never been funded through an <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> or any premine as Apixcash never had a premine. There is no CEO or a company controlling the Apixcash blockchain. It is a volunteer based and global community driven project. <a class="smoothscrollup" href="#apixcash">The founder</a>, <a class="smoothscrollup" href="#developers">developers</a> and the <a class="smoothscroll" href="#community">community</a> are unpaid volunteers that eliminate the risk of bankrupt and corruption.
+						</p>
+					</div>
+				</div>
+				<div class="col-block item-feature">
+					<div class="item-feature__icon">
+						<i class="fas fa-tachometer-alt-fastest"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Much faster.</h3>
+						<p>Apixcash transactions are confirmed in about 1 minutes, much faster than Bitcoin. <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> enables up to 1400 on-chain transactions per second and negligible fees make Beyondcoin another ideal currency for daily payments.
+						</p>
+					</div>
+				</div>
+				<div class="col-block item-feature">
+					<div class="item-feature__icon">
+						<i class="fas fa-shield-alt"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Always secure.</h3>
+						<p>Apixcash has been built on the uncrackable technology of the Bitcoin and Litecoin blockchain and implemented various advanced enhancements over it such as the Lightning Network.
+						</p>
+					</div>
+				</div>
+				<div class="col-block item-feature">
+					<div class="item-feature__icon">
+						<i class="fas fa-digging"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Mineable.</h3>
+						<p>Apixcash is a 100% <a href="https://wikipedia.org/wiki/Proof_of_work" target="_blank">Proof of Work</a> (PoW) blockchain that can be mined with the scrypt algorithm.
+						</p>
+					</div>
+				</div>
+				<div class="col-block item-feature">
+					<div class="item-feature__icon">
+						<i class="fas fa-coins"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Manageable units.</h3>
+						<p>
+						Compared to 21 Billion RVN, there will be 50 million Apixcash. The Apixcash block reward decreases 50% every 1.000.000 blocks.
+						</p>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!-- ***** Contact & Footer End ***** -->
+			<div class="testimonials-wrap" data-aos="fade" id="exchanges">
+				<div class="row">
+					<div class="col-full testimonials-header">
+						<h2 class="display-2">Quick picks from the Apixcash Ecosystem.</h2>
+						<p class="lead">
+							All exchanges and services that support Beyondcoin can be found on the <a href="https://litepaper.apix.cash/apix.cash-project/exchange" target="_blank">Apixcash Litepaper</a>.
+						</p>
+					</div>
+				</div>
+				<div class="row testimonials">
+					<div class="col-full slick-slider testimonials__slider">
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/apix.png" loading="lazy" width="72" height="72" alt="exchange.apix.cash" class="testimonials__avatar">
+							<p>Apixcash Exchange</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">APIX EXCHANGE</span>
+								<a href="https://exchange.apix.cash/" target="_blank" class="testimonials__link">exchange.apix.cash</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lrmargin25" data-aos="fade">
+					<div class="item-feature__text max800 align-center">
+						<p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Exchange Disclaimer</strong><br>The exchanges introduced here are for informational purposes only and they are not affiliated with the Apixcash community. Any exchange <a href="https://litepaper.apix.cash/apix.cash-project/exchange" target="_blank">can list Apixcash</a> without permission. Please always do your own research before using them, then store your APX on a <a class="smoothscroll" href="#downloads">personal wallet</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section id="community" class="s-pricing target-section">
+			<div class="row section-header has-bottom-sep" data-aos="fade-up">
+				<div class="col-full">
+					<h1 class="display-1">
+						The most welcoming<br/>community ever!
+					</h1>
+					<p class="lead">
+						Hundreds of members from all over the world have contributed to the Apixcash Project. We warmly welcome you to join us!
+					</p>
+				</div>
+			</div>
+			<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+				<div class="col-block item-feature" id="dgbat">
+					<div class="item-feature__icon">
+						<i class="fas fa-users"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Apixcash Team.</h3>
+						<p>The Apixcash Project is a community-driven outreach initiative. They are led by a team, whose members in turn manage teams across social media, outreach, education, writers and developers. They aim to promote the Apixcash blockchain through outreach and marketing campaigns.<br> <a href="https://litepaper.apix.cash/about-us/donate-development-team" target="_blank">Donate</a> - <a href="mailto:support@apix.cash">Contact</a>.
+						</p>
+					</div>
+				</div>
+				<div class="col-block item-feature" id="developers">
+					<div class="item-feature__icon">
+						<i class="fas fa-code"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Apixcash Developers.</h3>
+						<p>Everyone that is working on the Apixcash blockchain is an unpaid volunteer who devoted their time and skills to a project they believe in. Start contributing to the APX development today or build your own app on top of the Apixcash blockchain.
+							<br />	
+							<a href="https://github.com/apixcash/apixcash-core" target="_blank">APIXCASH on GitHub</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+				<div class="col-block item-feature" id="socialmedia">
+					<div class="item-feature__icon">
+						<i class="fas fa-share-alt"></i>
+					</div>
+					<div class="item-feature__text">
+						<h3 class="item-title">Social media</h3>
+						<p>Follow Apixcash across all primary social media platforms to keep up with the latest Beyondcoin news and share the posts with your friends to help us make our voices heard all over the world.
+						</p>
+						<p class="item-feature__icon">
+							<a class="rightpad20" href="https://twitter.com/apixcash" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+							<a class="rightpad20" href="https://www.reddit.com/r/apixcash/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+							<a href="https://discord.gg/THyHYxnJYx" target="_blank"><i class="fab fa-discord"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
 
-	<!-- jQuery -->
-	<script src="assets/js/jquery-3.6.0.min.js"></script>
+			<div class="lrmargin25" data-aos="fade">
+				<div class="item-feature__text max800 align-center">
+					<p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Social Media Disclaimer</strong><br>The personal opinion, beliefs and viewpoints expressed by Dimas, the Apixcash Project, and the Apixcash Exchange do not necessarily reflect the personal opinion, beliefs and viewpoints of the community.
+					</p>
+				</div>
+			</div>
+			<div class="testimonials-wrap" data-aos="fade" id="contribute">
+				<div class="row">
+					<div class="col-full testimonials-header">
+						<h2 class="display-2">Contribute to the Apixcash project.</h2>
+						<p class="lead">
+							<a href="https://litepaper.apix.cash/about-us/donate-development-team" target="_blank">Donate to the Apixcash Project</a> or use the services below to support us.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="downloads" class="s-download target-section">
+			<div class="row section-header has-bottom-sep" data-aos="fade-up">
+				<div class="col-full">
+					<h1 class="display-1">
+						Choose your app.
+					</h1>
+					<p class="lead">
+						Select an application to send, accept, and store your Apixcash.<br /><a href="https://github.com/apixcash/apixcash-core/releases" target="_blank">Current Apixcash Core v1.1.0</a>
+					</p>
+				</div>
+			</div>
+			<div data-aos="fade">
+				<h1 class="downtitle align-center">Apps developed by the Apixcash Project.</h1>
+				<div class="item-feature__text max830 align-center">
+					<p>The Apixcash Core wallet contains a full copy of the Apixcash blockchain and builds the backbone of the network. However, it needs a lot of disk space, high memory usage and long sync time. If you are not an experienced user, you may want to use a simplified <a class="smoothscroll" href="#software">software wallet</a>.</p>
+				</div>
+				<div class="row features block-1-3 block-m-1-2 block-tab-full stack">
+					<div class="col-block item-plan" id="dgbcore">
+						<div class="item-plan__block">
+							<div class="item-plan__top-part" align="center">
+								<p class="item-plan__price">Apixcash Core</p>
+							</div>
+							<div class="item-plan__bottom-part">
+								<ul class="item-plan__features">
+									<li><i class="fas fa-check blue"></i> Full validation</li>
+									<li><i class="fas fa-check blue"></i> Support the network</li>
+									<li><i class="fas fa-check blue"></i> High stability</li>
+									<li><i class="fas fa-check blue"></i> SegWit support</li>
+								</ul>
+								<div class="appsicon align-center">
+									<a class="rightpad25" href="https://github.com/apixcash/apixcash-core/releases/download/1.1.0/apixcash-1.1.0-win64-setup.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+									<a href="https://github.com/apixcash/apixcash-core/releases/download/1.1.0/apixcash-1.1.0-linux.zip" target="_blank"><i class="fab fa-linux zoom"></i></a>
+								</div>
+								<div class="supportline align-center">
+									<p class="item-plan__per">Available for Windows, Linux (64 Bit only)</p>
+								</div>
+								<div class="supportline align-center pt2">
+								</div>
+							</div>
+						</div>
+					</div>
 
-	<!-- Bootstrap -->
-	<script src="assets/js/popper.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+					<div class="col-block item-plan" id="dgbmobile">
+						<div class="item-plan__block">
+							<div class="item-plan__top-part" align="center">
+								<p class="item-plan__price">Mobile Wallet</p>
+							</div>
+							<div class="item-plan__bottom-part">
+								<ul class="item-plan__features">
+									<li><i class="fas fa-check blue"></i> Client side transaction creation</li>
+									<li><i class="fas fa-check blue"></i> SegWit support</li>
+									<li><i class="fas fa-check blue"></i> Multi-Language support</li>
+								</ul>
+								<div class="appsicon align-center">
+									<a class="rightpad25" href="#" target="_blank"><i class="fas fa-mobile"></i></a>
+								</div>
+								<div class="supportline align-center">
+									<p class="item-plan__per">Available on Android & IOS</p>
+								</div>
+								<div class="supportline align-center pt2">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-block item-plan" id="dgbmobile">
+						<div class="item-plan__block">
+							<div class="item-plan__top-part" align="center">
+								<p class="item-plan__price">Web Wallet</p>
+							</div>
+							<div class="item-plan__bottom-part">
+								<ul class="item-plan__features">
+									<li><i class="fas fa-check blue"></i> Client side transaction creation</li>
+									<li><i class="fas fa-check blue"></i> SegWit support</li>
+									<li><i class="fas fa-check blue"></i> Multi-Language support</li>
+								</ul>
+								<div class="appsicon align-center">
+									<a class="rightpad25" href="#" target="_blank"><i class="fas fa-globe"></i></a>
+								</div>
+								<div class="supportline align-center">
+									<p class="item-plan__per">Available on the web with progressive web app support</p>
+								</div>
+								<div class="supportline align-center pt2">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="lrmargin25" data-aos="fade"  id="docs">
+				<h1 class="downtitle align-center"><i class="fas fa-books"></i> Apixcash Documents & Guides.</h1>
+				<div class="item-feature__text max800 align-center">
+					<p>Looking for more documentation? Whether you need basic information for an article or technical information for an integration process. You can reach all the necessary guides below.
+					</p>
+				</div>
+				<div class="row testimonials downslide">
+					<div class="col-full slick-slider testimonials__slider">
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/infopaper.png" loading="lazy" width="72" height="72" alt="Apixcash Info Paper" class="testimonials__avatar">
+							<p>Learn the details of the Apixcash blockchain by using the whitepaper.</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">Whitepaper</span>
+								<a href="https://litepaper.apix.cash/" target="_blank" class="testimonials__link">Download</a>
+							</div>
+						</div>
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/logos.png" loading="lazy" width="72" height="72" alt="Apixcash Banners, Logos and Icons" class="testimonials__avatar">
+							<p>Find the correct and up to date Apixcash banners, logos, and icons for your project.</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">Logos & Icons</span>
+								<a href="https://github.com/apixcash/apixcash-core/tree/main/logo" target="_blank" class="testimonials__link">Go to GitHub</a>
+							</div>
+						</div>
+						<div class="testimonials__slide">
+							<img src="assets/images/avatars/howto.png" loading="lazy" width="72" height="72" alt="How to Guides" class="testimonials__avatar">
+							<p>Run your own Apixcash full node guides.</p>
+							<div class="testimonials__author">
+								<span class="testimonials__name">How to guides</span>
+								<a href="https://github.com/apixcash/apixcash-core#build-apixcashd-on-ubuntu-1604-1804" target="_blank" class="testimonials__link">Go to the Apixcash github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="s-footer footer">
+			<div class="row footer__bottom">
+				<div class="footer__about col-five tab-full left">
+					<h4>About Apixcash</h4>
+					<p>
+						APIXCASH (APX) project launched on 22th, Sept 2022, when the genesis block got mined, We are an open-source project designed to enable instant payments to ayone around the world.
+					</p>
+					<ul class="footer__social">
+							<li><a class="zoom" href="https://twitter.com/apixcash" target="_blank"><i class="fab fa-twitter-square zoom"></i></a></li>
+							<li><a class="zoom" href="https://www.reddit.com/r/apixcash/" target="_blank"><i class="fab fa-reddit zoom"></i></a></li>
+							<li><a class="zoom" href="https://discord.gg/THyHYxnJYx" target="_blank"><i class="fab fa-discord"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-six md-seven tab-full right end">
+					<div class="row">
+						<div class="footer__site-links col-six mob-full">
+							<h4>Beyondcoin links.</h4>
+							<ul class="footer__site-links">
+								<li><a href="https://explorer.apix.cash/" target="_blank">Apixcash Explorer</a></li>
+								<li><a href="https://api.apix.cash/" target="_blank">Apixcash API</a></li>
+							</ul>
+						</div>
+						<div class="footer__contact col-six mob-full">
+							<h4>Resources.</h4>
+							<ul class="footer__site-links">
+								<li><a href="https://github.com/apixcash/apixcash-core/tree/main/logo" target="_blank">Logos & Icons</a></li>
+								<li><a href="https://github.com/apixcash/" target="_blank">Github</a></li>
+								<li><a href="https://litepaper.apix.cash/about-us/donate-development-team" target="_blank">Donate</a></li>
+								<li><a href="https://litepaper.apix.cash/" target="_blank">Whitepaper</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-full ss-copyright"> 
+					<span>Copyright &copy; 2022 Apixcash Project</span> 
+					<span>All Rights Reserved</span> 
+					<!--<span>Released under the <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></span>-->
+					<span><a href="legal.html">Legal Disclaimer</a> | <a href="privacy.html">Privacy Policy</a></span>
+				</div>
+			</div>
+			<div class="go-top">
+				<a class="smoothscroll" title="Back to Top" href="#top"></a>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.5.1.min.js"></script>
+		<script src="assets/js/plugins1b.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript" id="cookieinfo" src="assets/js/cookieinfo.min.js"
+			data-font-size="14px"
+			data-font-family="Nunito Sans,sans-serif"
+			data-text-align="left"
+			data-fg="#545454"
+			data-bg="rgba(255, 255, 255, 0.9)"
+			data-link="#3bbd91"
+			data-divlink="#ffffff"
+			data-divlinkbg="#3bbd91"
+			data-position="bottom"
+			data-message="Apixcash use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies."
+			data-linkmsg="More info"
+			data-moreinfo="#"
+			data-close-text="OK"
+			></script>
+<script>
+  console.log("about to fetch a data");
 
-	<!-- Plugins -->
-	<script src="assets/js/particles.min.js"></script>
-	<script src="assets/js/scrollreveal.min.js"></script>
-	<script src="assets/js/jquery.downCount.js"></script>
-	<script src="assets/js/parallax.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
+  GetPeer().catch(error => {
+      console.error(error);
+      });
 
-	<!-- Global Init -->
-	<script src="assets/js/particle-dark.js"></script>
-	<script src="assets/js/custom.js"></script>
-</body>
+  async function GetPeer(){
+       const response = await fetch('https://explorer.apix.cash/api/getconnectioncount');
+       const blob = await response.blob();
+       document.getElementById('peers').src=URL.createObjectURL(blob);
+       }
+</script>
+<script>
+  console.log("about to fetch a data");
+
+  GetBlock().catch(error => {
+      console.error(error);
+      });
+
+  async function GetBlock(){
+       const response = await fetch('https://explorer.apix.cash/api/getblockcount');
+       const blob = await response.blob();
+       document.getElementById('blockcount').src=URL.createObjectURL(blob);
+       }
+</script>
+    <script>
+        fetch('https://exchange.apix.cash/api/public?command=returnTicker&tradePair=APX_BTC')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("price_btc");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                div.innerHTML = data[i].last;
+                mainContainer.appendChild(div);
+            }
+        }
+    </script>
+	</body>
 </html>
