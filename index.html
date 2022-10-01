@@ -214,7 +214,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row s-stats" data-aos="fade">
+			<!--DELETE IT <div class="row s-stats" data-aos="fade">
 				<div class="stitle">Apixcash blockchain stats</div>
 				<div class="block-1-3">
 					<div class="col-block stats__col">
@@ -229,7 +229,7 @@
 						<div id="peers" class="stats_text"><a href="#" target="_blank">nodes downloaded</a></div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			<div class="testimonials-wrap" data-aos="fade" id="history">
 				<div class="row">
 					<div class="col-full testimonials-header">
@@ -323,7 +323,7 @@
 					</div>
 					<div class="item-feature__text">
 						<h3 class="item-title">Much faster.</h3>
-						<p>Apixcash transactions are confirmed in about 1 minutes, much faster than Bitcoin. <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> enables up to 1400 on-chain transactions per second and negligible fees make Beyondcoin another ideal currency for daily payments.
+						<p>Apixcash transactions are confirmed in about 1 minutes, much faster than Bitcoin. <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> enables up to 1400 on-chain transactions per second and negligible fees make Apixcash another ideal currency for daily payments.
 						</p>
 					</div>
 				</div>
@@ -364,7 +364,7 @@
 					<div class="col-full testimonials-header">
 						<h2 class="display-2">Quick picks from the Apixcash Ecosystem.</h2>
 						<p class="lead">
-							All exchanges and services that support Beyondcoin can be found on the <a href="https://litepaper.apix.cash/apix.cash-project/exchange" target="_blank">Apixcash Litepaper</a>.
+							All exchanges and services that support Apixcash can be found on the <a href="https://litepaper.apix.cash/apix.cash-project/exchange" target="_blank">Apixcash Litepaper</a>.
 						</p>
 					</div>
 				</div>
@@ -431,7 +431,7 @@
 					</div>
 					<div class="item-feature__text">
 						<h3 class="item-title">Social media</h3>
-						<p>Follow Apixcash across all primary social media platforms to keep up with the latest Beyondcoin news and share the posts with your friends to help us make our voices heard all over the world.
+						<p>Follow Apixcash across all primary social media platforms to keep up with the latest Apixcash news and share the posts with your friends to help us make our voices heard all over the world.
 						</p>
 						<p class="item-feature__icon">
 							<a class="rightpad20" href="https://twitter.com/apixcash" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
@@ -601,7 +601,7 @@
 				<div class="col-six md-seven tab-full right end">
 					<div class="row">
 						<div class="footer__site-links col-six mob-full">
-							<h4>Beyondcoin links.</h4>
+							<h4>Apixcash links.</h4>
 							<ul class="footer__site-links">
 								<li><a href="https://explorer.apix.cash/" target="_blank">Apixcash Explorer</a></li>
 								<li><a href="https://api.apix.cash/" target="_blank">Apixcash API</a></li>
@@ -647,32 +647,6 @@
 			data-moreinfo="#"
 			data-close-text="OK"
 			></script>
-<script>
-  console.log("about to fetch a data");
-
-  GetPeer().catch(error => {
-      console.error(error);
-      });
-
-  async function GetPeer(){
-       const response = await fetch('https://explorer.apix.cash/api/getconnectioncount');
-       const blob = await response.blob();
-       document.getElementById('peers').src=URL.createObjectURL(blob);
-       }
-</script>
-<script>
-  console.log("about to fetch a data");
-
-  GetBlock().catch(error => {
-      console.error(error);
-      });
-
-  async function GetBlock(){
-       const response = await fetch('https://explorer.apix.cash/api/getblockcount');
-       const blob = await response.blob();
-       document.getElementById('blockcount').src=URL.createObjectURL(blob);
-       }
-</script>
     <script>
         fetch('https://exchange.apix.cash/api/public?command=returnTicker&tradePair=APX_BTC')
             .then(function (response) {
